@@ -1,0 +1,13 @@
+{
+  "semi": false,
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "tailwindAttributes": [
+    "className"
+  ],
+  "plugins": [
+    "prettier-plugin-tailwindcss"
+  ]
+}

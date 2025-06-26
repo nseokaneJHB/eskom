@@ -1,0 +1,14 @@
+.cache
+package.json
+*.html
+.husky
+yarn.lock
+node_modules
+core
+public
+.flake8
+.gitignore
+db.sqlite3
+manage.py
+Makefile
+requirements.tsx

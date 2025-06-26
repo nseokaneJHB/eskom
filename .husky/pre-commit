@@ -1,0 +1,6 @@
+yarn tsc
+yarn lint-staged
+echo ""
+curl https://icanhazdadjoke.com
+echo ""
+echo ""
