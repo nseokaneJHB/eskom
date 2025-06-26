@@ -29,7 +29,7 @@ define clear-python-cache
 	rm -rf `find . -type d -name "pip-wheel-metadata"`
 	deactivate
 endef
-	
+
 .PHONY: all
 all: install
 
@@ -65,7 +65,6 @@ superuser:
 
 .PHONY: dev
 dev:
-	$(bin_dir)/$(PYTHON_COMMAND) manage.py collectstatic --noinput --settings=$(SETTINGS_FILE)
 	$(bin_dir)/$(PYTHON_COMMAND) manage.py runserver --settings=$(SETTINGS_FILE)
 
 .PHONY: lint
