@@ -1,3 +1,5 @@
 [flake8]
-exclude = env, src, public, node_modules, **.ts, **.tsx
+exclude = env, node_modules, migrations
 max-line-length = 100
+extend-select = Q, B, C
+django-settings-module = core.settings

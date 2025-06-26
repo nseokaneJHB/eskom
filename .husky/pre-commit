@@ -1,5 +1,15 @@
+echo "Linting frontend files..."
 yarn tsc
 yarn lint-staged
+echo "Linting frontend files done."
+echo ""
+echo "Linting backend files..."
+STAGED_PY_FILES=$(git diff --cached --name-only --diff-filter=ACM | grep -E '\.py$')
+if [ -n "$STAGED_PY_FILES" ]; then
+  echo "Running Python pre-commit hooks..."
+  pre-commit run --files $STAGED_PY_FILES
+fi
+echo "Linting backend files done."
 echo ""
 curl https://icanhazdadjoke.com
 echo ""
